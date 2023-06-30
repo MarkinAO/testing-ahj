@@ -14,19 +14,19 @@
 }
 
 .visa {
-    background-image: url('../assets/resource/logs/visa.svg');
+    background-image: url('../assets/resource/logos/visa.svg');
 }
 
 .mastercard {
-    background-image: url('../assets/resource/logs/mastercard.svg');
+    background-image: url('../assets/resource/logos/mastercard.svg');
 }
 
 .mir {
-    background-image: url('../assets/resource/logs/visa.svg');
+    background-image: url('../assets/resource/logos/visa.svg');
 }
 
 .amex {
-    background-image: url('../assets/resource/logs/amex.svg');
+    background-image: url('../assets/resource/logos/amex.svg');
 }
 
 .grayscale {
