@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode production",
+    "start": "webpack serve --config webpack.config.js",
     "test": "jest",
     "lint": "eslint ./src",
     "fix": "eslint --fix ./src",

@@ -1,25 +1,28 @@
-import getLogs from './logsBox';
+import getlogos from './logosBox';
 import moonAlgorithm from './moonAlgorithm';
 
 export default class ValidatorWidget {
   constructor(parentEl) {
     this.parentEl = parentEl;
-    this.logs = getLogs();
+    this.logos = getlogos();
+    this.crossBtn = null;
+    this.cardsItem = null;
+    this.errorPanel = null;
 
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onClick = this.onClick.bind(this);
   }
 
-  renderLogs() {
+  renderlogos() {
     const cards = document.createElement('div');
     cards.classList.add('cards');
     this.parentEl.appendChild(cards);
 
-    for (let i = 0; i < this.logs.length; i++) {
+    for (let i = 0; i < this.logos.length; i += 1) {
       const cardsItem = document.createElement('div');
       cardsItem.classList.add('cards-item');
-      cardsItem.classList.add(this.logs[i]);
+      cardsItem.classList.add(this.logos[i]);
       cards.appendChild(cardsItem);
     }
   }
@@ -51,15 +54,18 @@ export default class ValidatorWidget {
   }
 
   bindToDOM() {
-    this.renderLogs();
+    this.renderlogos();
     this.renderForm();
+
+    this.crossBtn = document.querySelector('.cross-btn');
+    this.cardsItem = Array.from(document.querySelectorAll('.cards-item'));
+    this.errorPanel = document.querySelector('.error-panel');
 
     const form = document.querySelector('.validator-widget-form');
     form.addEventListener('submit', this.onSubmit);
     form.addEventListener('input', this.onChange);
 
-    const crossBtn = document.querySelector('.cross-btn');
-    crossBtn.addEventListener('click', this.onClick);
+    this.crossBtn.addEventListener('click', this.onClick);
   }
 
   onSubmit(e) {
@@ -76,11 +82,10 @@ export default class ValidatorWidget {
 
   onChange() {
     const { value } = document.querySelector('.validator-widget-input');
-    const crossBtn = document.querySelector('.cross-btn');
     if (value) {
-      crossBtn.classList.remove('hidden');
+      this.crossBtn.classList.remove('hidden');
     } else {
-      crossBtn.classList.add('hidden');
+      this.crossBtn.classList.add('hidden');
     }
   }
 
@@ -108,16 +113,14 @@ export default class ValidatorWidget {
   }
 
   resetPaymentSystem() {
-    const cardsItem = Array.from(document.querySelectorAll('.cards-item'));
-    cardsItem.forEach((item) => item.classList.remove('grayscale'));
+    this.cardsItem.forEach((item) => item.classList.remove('grayscale'));
   }
 
   widgetError() {
-    const errorPanel = document.querySelector('.error-panel');
-    errorPanel.textContent = 'Invalid card number';
+    this.errorPanel.textContent = 'Invalid card number';
 
     setTimeout(() => {
-      errorPanel.textContent = '';
+      this.errorPanel.textContent = '';
     }, 3000);
   }
 }
