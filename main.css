@@ -14,19 +14,19 @@
 }
 
 .visa {
-    background-image: url('../assets/resource/logos/visa.svg');
+    background-image: url(61f4db3f6dd7e10ba8f7.svg);
 }
 
 .mastercard {
-    background-image: url('../assets/resource/logos/mastercard.svg');
+    background-image: url(9ab53ec8084b07b7d031.svg);
 }
 
 .mir {
-    background-image: url('../assets/resource/logos/visa.svg');
+    background-image: url(61f4db3f6dd7e10ba8f7.svg);
 }
 
 .amex {
-    background-image: url('../assets/resource/logos/amex.svg');
+    background-image: url(b53d1cd91333b41f8933.svg);
 }
 
 .grayscale {
@@ -86,3 +86,4 @@
 .error-panel {
     color: red;
 }
+
