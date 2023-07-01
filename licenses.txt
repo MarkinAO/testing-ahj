@@ -1,0 +1,8 @@
+Following images is a copyright of following:
+
+image             copyright
+----------------  -----------------------------------------
+amex.svg          American Express Company
+mastercard.svg    Mastercard Incorporated
+mir.svg        Платёжная система «Мир»
+visa.svg          Visa Inc.
