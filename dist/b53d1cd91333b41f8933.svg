@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 28" width="40" height="28">
-	<title>amex-svg</title>
-	<style>
-		.s0 { fill: #1976d2 } 
-		.s1 { fill: #ffffff } 
-	</style>
-	<path id="Layer" class="s0" d="m41 25c0 2.2-1.8 4-4 4h-34c-2.2 0-4-1.8-4-4v-22c0-2.2 1.8-4 4-4h34c2.2 0 4 1.8 4 4z"/>
-	<path id="Layer" fill-rule="evenodd" class="s1" d="m21 10v7h-1.7v-5.1l-2.4 5.1h-1.5l-2.3-5.2v5.2h-3.5l-0.7-1.6h-3.4l-0.7 1.6h-1.8l3.1-7h2.2l3 6.7v-6.7h2.7l2.1 4.7 2.2-4.7zm-12.8 3.9l-1.1-2.4-1 2.4zm28.7 3.1h-2.2l-2-2.3-2.1 2.3h-6.6v-7h6.8l2 2.2 1.9-2.2h2.3l-3.2 3.4zm-5.3-3.6l-1.7-1.9h-4.2v1.3h3.8v1.3h-3.8v1.4h4z"/>
-</svg>
